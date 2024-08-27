@@ -8,8 +8,8 @@ export default function Courses() {
     <div className="courses">
       {" "}
       <div className="wrapper">
-        <h1>Training that suits everyone</h1>
-        <h2>From open gym to personal training</h2>
+        <h2>Training that suits everyone</h2>
+        <h1>From open gym to personal training</h1>
 
         <div className="boxes">
           <div className="boxOne">
@@ -46,10 +46,17 @@ export default function Courses() {
         </div>
       </div>
       <footer>
-        Free SVG Background by{" "}
-        <a target="_blank" href="https://bgjar.com">
-          BGJar
-        </a>
+        <span>
+          Free SVG Background by{" "}
+          <a target="_blank" href="https://bgjar.com" rel="noreferrer">
+            BGJar
+          </a>
+        </span>
+        <span>
+          <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">
+            Gym icons created by Freepik - Flaticon
+          </a>
+        </span>
       </footer>
     </div>
   );

@@ -9,10 +9,11 @@ h2 {
 
 .wrapper {
   background-color: whitesmoke;
-  padding: 30px 90px 20px 90px;
+  padding: 30px 90px 109px 90px;
   display: block;
   margin-inline: 100px;
   margin-top: 90px;
+  margin-bottom: 75px;
 
   box-shadow: rgba(166, 166, 166, 0.567) 0px 4px 41px;
   background-color: white;
@@ -31,6 +32,7 @@ h2 {
 .boxThree,
 .boxFour {
   box-shadow: rgba(106, 140, 157, 0.24) 2px 8px 13px;
+  border-radius: 5px;
 }
 
 .boxOne {
@@ -60,4 +62,16 @@ h2 {
 
 .courses p {
   color: rgb(194, 193, 193);
+}
+
+@media (max-width: 1300px) {
+  .boxes {
+    display: block;
+  }
+  .boxOne,
+  .boxTwo,
+  .boxThree,
+  .boxFour {
+    margin-bottom: 30px;
+  }
 }
