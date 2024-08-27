@@ -1,0 +1,34 @@
+.courses h1,
+h2 {
+  text-align: center;
+}
+
+.boxWrapper {
+  margin-inline: 100px;
+}
+
+.boxes {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 15%;
+  column-gap: 5%;
+}
+
+.boxOne {
+  position: relative;
+  bottom: -62%;
+}
+
+.boxThree {
+  position: relative;
+  bottom: -62%;
+}
+.boxFour {
+  grid-column: 2;
+}
+.boxes > div {
+  border: 1px solid grey;
+  padding: 80px;
+  width: auto;
+}
