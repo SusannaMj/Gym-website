@@ -3,32 +3,55 @@ h2 {
   text-align: center;
 }
 
-.boxWrapper {
+.wrapper {
+  padding: 30px 90px 20px 90px;
+  display: block;
   margin-inline: 100px;
+  margin-top: 90px;
+
+  box-shadow: rgba(166, 166, 166, 0.567) 0px 4px 41px;
 }
 
 .boxes {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 15%;
+  row-gap: 10%;
   column-gap: 5%;
+}
+
+.boxOne,
+.boxTwo,
+.boxThree,
+.boxFour {
+  box-shadow: rgba(106, 140, 157, 0.24) 2px 8px 13px;
 }
 
 .boxOne {
   position: relative;
   bottom: -62%;
+
+  border-top: 5px solid turquoise;
+}
+
+.boxTwo {
+  border-top: 5px solid orangered;
 }
 
 .boxThree {
   position: relative;
   bottom: -62%;
+  border-top: 5px solid teal;
 }
 .boxFour {
   grid-column: 2;
+  border-top: 5px solid rgb(243, 212, 10);
 }
 .boxes > div {
-  border: 1px solid grey;
-  padding: 80px;
+  padding: 10px 30px 100px 24px;
   width: auto;
+}
+
+.courses p {
+  color: rgb(194, 193, 193);
 }
