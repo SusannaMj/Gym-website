@@ -1,5 +1,7 @@
 import React from "react";
 import "./courses.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 
 export default function Courses() {
   return (
@@ -21,6 +23,9 @@ export default function Courses() {
           <div className="boxTwo">
             <h3>Gym</h3>
             <p>Our gym is open 24/7 and offers the latest equipment</p>
+            <div className="icon">
+              <FontAwesomeIcon icon={faDumbbell} />
+            </div>
           </div>
 
           <div className="boxThree">
