@@ -1,0 +1,24 @@
+.NavBar {
+  padding-top: 15px;
+}
+
+.NavbarLinks {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.NavLink {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+  padding: 10px 20px 10px 20px;
+  box-shadow: rgba(229, 229, 230, 0.25) 0px 30px 60px -12px inset,
+    rgba(219, 218, 218, 0.3) 0px 18px 36px -18px inset;
+}
+
+.NavLink:hover {
+  color: lightgray;
+  transition: all 100ms ease-in-out;
+}
