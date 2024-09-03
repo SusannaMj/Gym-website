@@ -40,8 +40,8 @@
 
 .pricing-card {
   margin: 0 auto;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -62,4 +62,25 @@
 .subscription-inclusions {
   background-color: aquamarine;
   grid-row: 2/4;
+}
+
+.pricing-card ul {
+  display: block;
+  padding: 10px;
+}
+
+.pricing-card li {
+  list-style: none;
+
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid white;
+
+  color: azure;
+}
+
+.pricing-card li:last-child {
+  border-bottom: 1px solid white;
 }
