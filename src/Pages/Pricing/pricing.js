@@ -13,7 +13,7 @@ export default function Pricing() {
             className="toggle-checkbox"
             id="toggle-checkbox"
           />
-          <label className="toggle-switch" for="toggle-checkbox">
+          <label className="toggle-switch" htmlFor="toggle-checkbox">
             {" "}
           </label>
           Monthly
