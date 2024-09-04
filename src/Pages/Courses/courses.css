@@ -8,7 +8,7 @@ h2 {
 }
 
 .wrapper {
-  background-color: whitesmoke;
+  background-color: var(--dark-white);
   padding: 30px 90px 109px 90px;
   display: block;
   margin-inline: 100px;
@@ -39,21 +39,21 @@ h2 {
   position: relative;
   bottom: -62%;
 
-  border-top: 5px solid turquoise;
+  border-top: 5px solid var(--turquoise);
 }
 
 .boxTwo {
-  border-top: 5px solid orangered;
+  border-top: 5px solid var(--red);
 }
 
 .boxThree {
   position: relative;
   bottom: -62%;
-  border-top: 5px solid teal;
+  border-top: 5px solid var(--opaque);
 }
 .boxFour {
   grid-column: 2;
-  border-top: 5px solid rgb(243, 212, 10);
+  border-top: 5px solid var(--yellow);
 }
 .boxes > div {
   padding: 10px 30px 100px 24px;
