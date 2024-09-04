@@ -3,7 +3,7 @@ import "./pricing.css";
 
 export default function Pricing() {
   return (
-    <div>
+    <div className="pricing-body">
       <h1>Our pricing</h1>
       <div className="toggle">
         <span>
@@ -23,11 +23,15 @@ export default function Pricing() {
         <div className="pricing-cards">
           <div className="pricing-card">
             <div className="subscription-name" id="1">
+              Monthly subscription
+              <br />
               Basic
               <br />
               30-day, hassle-free money back guarantee
             </div>
             <div className="subscription-price" id="2">
+              Monthly subscription
+              <br />
               $19.99
               <button>Sign Up</button>
             </div>
@@ -47,6 +51,9 @@ export default function Pricing() {
               30-day, hassle-free money back guarantee
             </div>
             <div className="subscription-price" id="2">
+              {" "}
+              Monthly subscription
+              <br />
               $24.99
               <button>Sign Up</button>
             </div>
@@ -66,6 +73,8 @@ export default function Pricing() {
               30-day, hassle-free money back guarantee
             </div>
             <div className="subscription-price" id="2">
+              Monthly subscription
+              <br />
               $39.99
               <button>Sign Up</button>
             </div>
@@ -73,7 +82,7 @@ export default function Pricing() {
               <ul>
                 <li>24/7 access to the gym</li>
                 <li>unliited free classes</li>
-                <li>free personal training sessions </li>
+                <li>free personal training</li>
               </ul>
             </div>
           </div>

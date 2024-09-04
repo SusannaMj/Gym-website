@@ -1,3 +1,15 @@
+.pricing-body h1 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.toggle {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
 .toggle-checkbox {
   display: none;
 }
@@ -36,12 +48,14 @@
 .pricing-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  padding-inline: 100px;
 }
 
 .pricing-card {
   margin: 0 auto;
-  width: 400px;
-  height: 300px;
+  inline-size: 100%;
+
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,4 +97,8 @@
 
 .pricing-card li:last-child {
   border-bottom: 1px solid white;
+}
+
+.pricing-card button {
+  display: block;
 }
