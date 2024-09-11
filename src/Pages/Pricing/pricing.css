@@ -38,7 +38,7 @@
 }
 
 .toggle-checkbox:checked + label {
-  background-color: var(--red);
+  background-color: var(--light-red);
 }
 
 .toggle-checkbox:checked + label::before {

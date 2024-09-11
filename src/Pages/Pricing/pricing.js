@@ -223,9 +223,11 @@ export default function Pricing() {
             style={{ display: subscriptionTerm ? "none" : "grid" }}
           >
             <div className="subscription-name">
-              <h2>Basic</h2>
+              <h2 style={{ color: "var(--light-red)" }}>Basic</h2>
               <br />
-              <p>30-day, hassle-free money back guarantee</p>
+              <p style={{ color: "var(--yellow)" }}>
+                30-day, hassle-free money back guarantee
+              </p>
               <p
                 style={{
                   fontSize: "16px",
@@ -237,7 +239,10 @@ export default function Pricing() {
                 monthly packages, perfect for peopel who want to stay flexible
               </p>
             </div>
-            <div className="subscription-price">
+            <div
+              className="subscription-price"
+              style={{ backgroundColor: "var(--red)" }}
+            >
               <p
                 style={{
                   fontSize: "19px",
@@ -260,9 +265,14 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button>Sign Up</button>
+              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+                Sign Up
+              </button>
             </div>
-            <div className="subscription-inclusions">
+            <div
+              className="subscription-inclusions"
+              style={{ backgroundColor: "var(--light-red)" }}
+            >
               <ul>
                 <li>24/7 access to the gym</li>
                 <li>one free class a week</li>
@@ -276,9 +286,11 @@ export default function Pricing() {
           >
             {" "}
             <div className="subscription-name">
-              <h2>Professional</h2>
+              <h2 style={{ color: "var(--light-red)" }}>Professional</h2>
               <br />
-              <p>30-day, hassle-free money back guarantee</p>
+              <p style={{ color: "var(--yellow)" }}>
+                30-day, hassle-free money back guarantee
+              </p>
               <p
                 style={{
                   fontSize: "16px",
@@ -290,7 +302,10 @@ export default function Pricing() {
                 monthly packages, perfect for peopel who want to stay flexible
               </p>
             </div>
-            <div className="subscription-price">
+            <div
+              className="subscription-price"
+              style={{ backgroundColor: "var(--red)" }}
+            >
               <p
                 style={{
                   fontSize: "19px",
@@ -313,9 +328,14 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button>Sign Up</button>
+              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+                Sign Up
+              </button>
             </div>
-            <div className="subscription-inclusions">
+            <div
+              className="subscription-inclusions"
+              style={{ backgroundColor: "var(--light-red)" }}
+            >
               <ul>
                 <li>24/7 access to the gym</li>
                 <li>unlimited free classes</li>
@@ -329,9 +349,11 @@ export default function Pricing() {
           >
             {" "}
             <div className="subscription-name">
-              <h2>Master</h2>
+              <h2 style={{ color: "var(--light-red)" }}>Master</h2>
               <br />
-              <p>30-day, hassle-free money back guarantee</p>
+              <p style={{ color: "var(--yellow)" }}>
+                30-day, hassle-free money back guarantee
+              </p>
               <p
                 style={{
                   fontSize: "16px",
@@ -343,7 +365,10 @@ export default function Pricing() {
                 monthly packages, perfect for peopel who want to stay flexible
               </p>
             </div>
-            <div className="subscription-price">
+            <div
+              className="subscription-price"
+              style={{ backgroundColor: "var(--red)" }}
+            >
               <p
                 style={{
                   fontSize: "19px",
@@ -366,9 +391,14 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button>Sign Up</button>
+              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+                Sign Up
+              </button>
             </div>
-            <div className="subscription-inclusions">
+            <div
+              className="subscription-inclusions"
+              style={{ backgroundColor: "var(--light-red)" }}
+            >
               <ul>
                 <li>24/7 access to the gym</li>
                 <li>unlimited free classes</li>
