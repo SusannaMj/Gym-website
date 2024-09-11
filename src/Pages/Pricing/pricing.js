@@ -4,8 +4,10 @@ import "./pricing.css";
 export default function Pricing() {
   let [subscriptionTerm, setSubscriptionTerm] = useState("true");
 
-  function changeSubscription(value) {
-    setSubscriptionTerm(!value);
+  function changeSubscription() {
+    setSubscriptionTerm(function (prevState) {
+      return !prevState;
+    });
   }
 
   return (
@@ -13,7 +15,7 @@ export default function Pricing() {
       <h1>Our pricing</h1>
       <div className="toggle">
         <span>
-          Monthly
+          Annually
           <input
             type="checkbox"
             className="toggle-checkbox"
@@ -23,7 +25,7 @@ export default function Pricing() {
           <label className="toggle-switch" htmlFor="toggle-checkbox">
             {" "}
           </label>
-          Annually
+          Monthly
         </span>
       </div>
       <div className="Wrapper">
