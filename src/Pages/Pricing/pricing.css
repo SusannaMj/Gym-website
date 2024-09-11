@@ -144,3 +144,7 @@
 .display-none {
   display: none;
 }
+
+.display {
+  display: grid;
+}

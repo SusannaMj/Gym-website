@@ -1,14 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./pricing.css";
 
 export default function Pricing() {
-  function changeSubscription(event) {
-    let card = document.querySelector("pricing-card");
-    if (card.classList.contains("desplay-none")) {
-      card.classList.remove("display-none");
-    } else {
-      card.classList.add("display-none");
-    }
+  let [subscriptionTerm, setSubscriptionTerm] = useState("true");
+
+  function changeSubscription(value) {
+    setSubscriptionTerm(!value);
   }
 
   return (
@@ -31,7 +28,10 @@ export default function Pricing() {
       </div>
       <div className="Wrapper">
         <div className="pricing-cards">
-          <div className="pricing-card ">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "grid" : "none" }}
+          >
             <div className="subscription-name">
               <h2>Basic</h2>
               <br />
@@ -80,7 +80,10 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "grid" : "none" }}
+          >
             {" "}
             <div className="subscription-name">
               <h2>Professional</h2>
@@ -130,7 +133,10 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "grid" : "none" }}
+          >
             {" "}
             <div className="subscription-name">
               <h2>Master</h2>
@@ -180,7 +186,10 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card display-none">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "none" : "grid" }}
+          >
             <div className="subscription-name">
               <h2>Basic</h2>
               <br />
@@ -229,7 +238,10 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card display-none">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "none" : "grid" }}
+          >
             {" "}
             <div className="subscription-name">
               <h2>Professional</h2>
@@ -279,7 +291,10 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card display-none">
+          <div
+            className="pricing-card"
+            style={{ display: subscriptionTerm ? "none" : "grid" }}
+          >
             {" "}
             <div className="subscription-name">
               <h2>Master</h2>
