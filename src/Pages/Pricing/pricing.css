@@ -140,11 +140,3 @@
 .pricing-card > div {
   padding: 30px;
 }
-
-.display-none {
-  display: none;
-}
-
-.display {
-  display: grid;
-}
