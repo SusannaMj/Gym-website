@@ -2,6 +2,15 @@ import React from "react";
 import "./pricing.css";
 
 export default function Pricing() {
+  function changeSubscription(event) {
+    let card = document.querySelector("pricing-card");
+    if (card.classList.contains("desplay-none")) {
+      card.classList.remove("display-none");
+    } else {
+      card.classList.add("display-none");
+    }
+  }
+
   return (
     <div className="pricing-body">
       <h1>Our pricing</h1>
@@ -12,6 +21,7 @@ export default function Pricing() {
             type="checkbox"
             className="toggle-checkbox"
             id="toggle-checkbox"
+            onChange={changeSubscription}
           />
           <label className="toggle-switch" htmlFor="toggle-checkbox">
             {" "}
@@ -170,7 +180,7 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card display-none">
             <div className="subscription-name">
               <h2>Basic</h2>
               <br />
@@ -219,7 +229,7 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card display-none">
             {" "}
             <div className="subscription-name">
               <h2>Professional</h2>
@@ -269,7 +279,7 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-          <div className="pricing-card ">
+          <div className="pricing-card display-none">
             {" "}
             <div className="subscription-name">
               <h2>Master</h2>
