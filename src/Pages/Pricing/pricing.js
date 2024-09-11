@@ -7,7 +7,7 @@ export default function Pricing() {
       <h1>Our pricing</h1>
       <div className="toggle">
         <span>
-          Annually
+          Monthly
           <input
             type="checkbox"
             className="toggle-checkbox"
@@ -16,7 +16,7 @@ export default function Pricing() {
           <label className="toggle-switch" htmlFor="toggle-checkbox">
             {" "}
           </label>
-          Monthly
+          Annually
         </span>
       </div>
       <div className="Wrapper">
@@ -194,7 +194,7 @@ export default function Pricing() {
                   fontWeight: "600",
                 }}
               >
-                Monthly subscription
+                Yearly subscription
               </p>
               <br />
               <span
@@ -204,10 +204,10 @@ export default function Pricing() {
                   fontWeight: "700",
                 }}
               >
-                $19.99{" "}
+                $191.99{" "}
               </span>
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
-                per month
+                per year
               </span>
               <button>Sign Up</button>
             </div>
@@ -244,7 +244,7 @@ export default function Pricing() {
                   fontWeight: "600",
                 }}
               >
-                Monthly subscription
+                Yearly subscription
               </p>
               <br />
               <span
@@ -254,10 +254,10 @@ export default function Pricing() {
                   fontWeight: "700",
                 }}
               >
-                $29.99{" "}
+                $287.99{" "}
               </span>
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
-                per month
+                per year
               </span>
               <button>Sign Up</button>
             </div>
@@ -294,7 +294,7 @@ export default function Pricing() {
                   fontWeight: "600",
                 }}
               >
-                Monthly subscription
+                Yearly subscription
               </p>
               <br />
               <span
@@ -304,10 +304,10 @@ export default function Pricing() {
                   fontWeight: "700",
                 }}
               >
-                $39.99{" "}
+                $383.99{" "}
               </span>
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
-                per month
+                per year
               </span>
               <button>Sign Up</button>
             </div>
