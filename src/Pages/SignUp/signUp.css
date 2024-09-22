@@ -1,0 +1,34 @@
+.signUpWrapper {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  margin: 300px 70px;
+  padding: 100px;
+  flex-wrap: wrap;
+}
+
+.signUpForm {
+  display: block;
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  width: 400px;
+}
+
+.signUpForm input {
+  display: block;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signUpForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+}
