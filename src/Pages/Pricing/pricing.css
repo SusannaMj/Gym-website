@@ -70,6 +70,7 @@
 }
 .pricing-card:hover {
   transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes spin {
@@ -82,7 +83,7 @@
 }
 
 .pricing-card.rotated {
-  animation: spin 1s ease-in-out;
+  animation: spin 1.2s ease;
 }
 
 .pricing-card.rotated:hover {
