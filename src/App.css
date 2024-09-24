@@ -7,9 +7,11 @@
   --light-yellow: #fdf039b6;
 
   --red: #ad6b70;
-  --light-red: #d4848b;
+  --light-red: #ff787a;
   --yellow: #ffc803b6;
   --grey: #cdcccc;
+  --purple: #5d55a2;
+  --dark-green: #36cc8b;
 }
 
 body {
