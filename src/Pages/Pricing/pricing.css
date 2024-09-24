@@ -68,10 +68,25 @@
   box-shadow: rgba(61, 81, 90, 0.24) 2px 2px 30px;
   border-radius: 50px;
 }
-
 .pricing-card:hover {
   transform: scale(1.15);
-  transition: all 50ms ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.pricing-card.rotated {
+  animation: spin 1s ease-in-out;
+}
+
+.pricing-card.rotated:hover {
+  transform: scale(1.15);
 }
 
 .subscription-name {

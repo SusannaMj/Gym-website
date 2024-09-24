@@ -3,9 +3,13 @@ import "./pricing.css";
 
 export default function Pricing() {
   let [subscriptionTerm, setSubscriptionTerm] = useState("true");
+  let [rotation, setRotation] = useState("false");
 
   function changeSubscription() {
     setSubscriptionTerm(function (prevState) {
+      return !prevState;
+    });
+    setRotation(function (prevState) {
       return !prevState;
     });
   }
@@ -31,7 +35,7 @@ export default function Pricing() {
       <div className="Wrapper">
         <div className="pricing-cards">
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "rotated" : ""}`}
             style={{ display: subscriptionTerm ? "grid" : "none" }}
           >
             <div className="subscription-name">
@@ -93,7 +97,7 @@ export default function Pricing() {
             </div>
           </div>
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "rotated" : ""}`}
             style={{ display: subscriptionTerm ? "grid" : "none" }}
           >
             {" "}
@@ -156,7 +160,7 @@ export default function Pricing() {
             </div>
           </div>
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "rotated" : ""}`}
             style={{ display: subscriptionTerm ? "grid" : "none" }}
           >
             {" "}
@@ -219,7 +223,7 @@ export default function Pricing() {
             </div>
           </div>
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "" : "rotated"}`}
             style={{ display: subscriptionTerm ? "none" : "grid" }}
           >
             <div className="subscription-name">
@@ -281,7 +285,7 @@ export default function Pricing() {
             </div>
           </div>
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "" : "rotated"}`}
             style={{ display: subscriptionTerm ? "none" : "grid" }}
           >
             {" "}
@@ -344,7 +348,7 @@ export default function Pricing() {
             </div>
           </div>
           <div
-            className="pricing-card"
+            className={`pricing-card ${rotation ? "" : "rotated"}`}
             style={{ display: subscriptionTerm ? "none" : "grid" }}
           >
             {" "}
