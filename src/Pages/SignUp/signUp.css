@@ -1,13 +1,19 @@
 .signUpWrapper {
-  background-color: aqua;
+  background-image: url("../../../src/Images/gym-clipart-set.jpg");
+
+  background-size: contain;
+
+  background-blend-mode: color-burn;
+
+  background-color: var(--light-red);
+
   display: flex;
   justify-content: space-around;
-  margin: 300px 70px;
-  padding: 100px;
-  flex-wrap: wrap;
+  margin: 100px 100px;
+  padding: 100px 170px;
 }
 
-.signUpForm {
+.signUpMain {
   display: block;
   background-color: white;
   padding: 20px;
@@ -15,10 +21,14 @@
   width: 400px;
 }
 
+.signUpForm {
+  margin-left: 100px;
+}
+
 .signUpForm input {
   display: block;
-  margin-bottom: 12px;
-  padding: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
   border: 1px solid var(--grey);
   border-radius: 3px;
   width: 100%;
@@ -28,7 +38,30 @@
 .signUpForm button {
   display: block;
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--grey);
+  padding: 15px;
+  border: none;
+
   border-radius: 3px;
+}
+
+.catchPhrase {
+  color: var(--white);
+}
+
+.catchPhrase h2 {
+  font-size: 57px;
+  text-align: left;
+}
+
+.tryButton {
+  display: block;
+
+  padding: 15px;
+
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  cursor: pointer;
 }
