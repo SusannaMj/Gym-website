@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signUp.css";
 
 export default function SignUp() {
+  let [name, setName] = useState("");
+
+  function handleNameInput(event) {
+    setName(event.target.value);
+  }
+  function signUpMessage() {
+    let adjustedName = name.toUpperCase();
+    alert(
+      `Thank you for signing up ${adjustedName}, we will be in touch shortly!`
+    );
+  }
   return (
     <div className="signUpWrapper">
       <div className="catchPhrase">
@@ -15,6 +26,7 @@ export default function SignUp() {
         <button
           className="tryButton"
           style={{ backgroundColor: "var(--purple)", color: "var(--white)" }}
+          onClick={signUpMessage}
         >
           Try it free for 7 days{" "}
           <span style={{ opacity: "0.6" }}>
@@ -22,7 +34,12 @@ export default function SignUp() {
           </span>
         </button>
         <div className="signUpMain">
-          <input type="text" placeholder="FIRST NAME" name="first-name" />
+          <input
+            type="text"
+            placeholder="FIRST NAME"
+            name="first-name"
+            onChange={handleNameInput}
+          />
           <input type="text" placeholder="LAST NAME" name="surname" />
           <input type="email" placeholder="EMAIL" name="email" />
           <input type="password" placeholder="PASSWORD" name="password" />
@@ -31,6 +48,7 @@ export default function SignUp() {
               backgroundColor: "var(--dark-green)",
               color: "var(--white)",
             }}
+            onClick={signUpMessage}
           >
             Sign Up
           </button>
