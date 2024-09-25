@@ -17,15 +17,15 @@ export default function SignUp() {
           style={{ backgroundColor: "var(--purple)", color: "var(--white)" }}
         >
           Try it free for 7 days{" "}
-          <sapn style={{ opacity: "0.6" }}>
+          <span style={{ opacity: "0.6" }}>
             | full price as per chosen package thereafter
-          </sapn>
+          </span>
         </button>
         <div className="signUpMain">
-          <input type="text" placeholder="FIRST NAME" />
-          <input type="text" placeholder="LAST NAME" />
-          <input type="email" placeholder="EMAIL" />
-          <input type="password" placeholder="PASSWORD" />
+          <input type="text" placeholder="FIRST NAME" name="first-name" />
+          <input type="text" placeholder="LAST NAME" name="surname" />
+          <input type="email" placeholder="EMAIL" name="email" />
+          <input type="password" placeholder="PASSWORD" name="password" />
           <button
             style={{
               backgroundColor: "var(--dark-green)",
