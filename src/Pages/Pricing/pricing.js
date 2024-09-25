@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./pricing.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {
+  const navigate = useNavigate();
+
+  function navigateToSignUp() {
+    navigate("/signUp");
+  }
+
   let [subscriptionTerm, setSubscriptionTerm] = useState("true");
   let [rotation, setRotation] = useState("false");
 
@@ -81,7 +88,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per month
               </span>
-              <button style={{ backgroundColor: "var(--light-green)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-green)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
@@ -144,7 +154,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per month
               </span>
-              <button style={{ backgroundColor: "var(--light-green)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-green)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
@@ -207,7 +220,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per month
               </span>
-              <button style={{ backgroundColor: "var(--light-green)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-green)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
@@ -269,7 +285,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-yellow)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
@@ -332,7 +351,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-yellow)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
@@ -395,7 +417,10 @@ export default function Pricing() {
               <span style={{ color: "var(--white)", opacity: "0.5" }}>
                 per year
               </span>
-              <button style={{ backgroundColor: "var(--light-yellow)" }}>
+              <button
+                style={{ backgroundColor: "var(--light-yellow)" }}
+                onClick={navigateToSignUp}
+              >
                 Sign Up
               </button>
             </div>
