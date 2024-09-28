@@ -35,6 +35,38 @@
   border-right: 150px solid rgb(255, 255, 255, 0.1);
 }
 
-.homepageBody h1 h2 p button {
-  transform: skew(20deg);
+.overlay {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stripe {
+  background-color: var(--white);
+  width: 22px;
+
+  z-index: 2;
+  transform: skew(-20deg);
+}
+
+.stripeTwo {
+  background-color: var(--white);
+  width: 50px;
+
+  z-index: 2;
+  transform: skew(-20deg);
+  position: relative;
+}
+
+.stripeTwo::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -200px;
+  position: absolute;
+  border-left: 250px solid rgba(255, 255, 255, 0.4);
+  z-index: -1;
+  background: transparent;
 }
