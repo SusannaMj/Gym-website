@@ -3,8 +3,8 @@ import "./home.css";
 
 export default function Home() {
   return (
-    <div>
-      <div className="hero">
+    <div className="homepageBody">
+      <div className="homepageHero">
         <h1>Become Fitter, Stronger & more confident!</h1>
         <h2>Get started with us from $5 AUD a week</h2>
         <button>Pricing</button>
@@ -19,6 +19,7 @@ export default function Home() {
           <span>√ Modern Equipment</span>
         </p>
       </div>
+
       <div>Start training with us today</div>
       <footer className="contact">
         <a href="">Linkedin</a>

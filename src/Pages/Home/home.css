@@ -1,0 +1,40 @@
+.homepageBody {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../Images/black-background-abstract.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+  position: absolute;
+}
+
+.homepageHero {
+  background-color: var(--white);
+
+  margin: auto;
+  z-index: 2;
+  transform: skew(-20deg);
+  max-width: 890px;
+  height: 100%;
+  position: relative;
+}
+
+.homepageHero::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: -100px;
+  right: -150px;
+  bottom: 0;
+  z-index: -1;
+
+  border-left: 100px solid rgba(255, 255, 255, 0.2);
+  border-right: 150px solid rgb(255, 255, 255, 0.1);
+}
+
+.homepageBody h1 h2 p button {
+  transform: skew(20deg);
+}
