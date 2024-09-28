@@ -70,3 +70,7 @@
   z-index: -1;
   background: transparent;
 }
+
+.homepageHero * {
+  transform: skew(20deg);
+}
