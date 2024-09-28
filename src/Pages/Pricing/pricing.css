@@ -47,9 +47,9 @@
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-inline: 100px;
+  grid-gap: 50px;
 }
 
 .pricing-cards h2 {
