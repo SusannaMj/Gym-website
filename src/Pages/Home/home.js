@@ -20,14 +20,14 @@ export default function Home() {
             <span>√ personal Training</span>
             <span>√ Modern Equipment</span>
           </p>{" "}
-          <footer className="contact">
-            <a href="">Linkedin</a>
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-          </footer>
         </div>
         <div className="stripeTwo"></div>{" "}
       </div>{" "}
+      <footer className="contact">
+        <a href="">Linkedin</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+      </footer>
     </div>
   );
 }

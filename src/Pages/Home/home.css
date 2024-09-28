@@ -74,3 +74,11 @@
 .homepageHero * {
   transform: skew(20deg);
 }
+
+.contact {
+  background-color: #ede6e6f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
