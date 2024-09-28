@@ -1,6 +1,9 @@
 import React from "react";
 import "./home.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+
 export default function Home() {
   return (
     <div className="homepageBody">
@@ -25,7 +28,9 @@ export default function Home() {
       </div>{" "}
       <footer className="contact">
         <a href="">Linkedin</a>
-        <a href="">Facebook</a>
+        <a href="#" rel="noreferrer">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
         <a href="">Twitter</a>
       </footer>
     </div>
