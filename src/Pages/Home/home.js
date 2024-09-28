@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -33,7 +33,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
         <a href="#" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a href="">
           <FontAwesomeIcon icon={faTwitter} />
