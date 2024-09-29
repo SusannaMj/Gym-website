@@ -13,14 +13,11 @@ export default function Home() {
         <div className="stripe"></div>
         <div className="homepageHero">
           <h1>Become Fitter, Stronger & more confident!</h1>
-          <h2>Get started with us from $5 AUD a week</h2>
-          <button>Pricing</button>
-          <button>Learn More</button>
-          <h3>
-            More than 1 million people are training with us in one of our
-            programs all over Australia and New Zealand
-          </h3>
-          <p>
+          <div className="button-container">
+            <button>Pricing</button>
+            <button>Learn More</button>
+          </div>
+          <p className="ticks">
             <span>√ Daily Classes</span>
             <span>√ personal Training</span>
             <span>√ Modern Equipment</span>
@@ -39,6 +36,16 @@ export default function Home() {
           <FontAwesomeIcon icon={faTwitter} id="icon" />
         </a>
       </footer>
+      <p>
+        Foto von{" "}
+        <a href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Scott Webb
+        </a>{" "}
+        auf{" "}
+        <a href="https://unsplash.com/de/fotos/frau-tragt-schwarzes-oberteil-und-halt-schwarze-hanteln-die-vor-dem-spiegel-stehen-Vn39uEkX00s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Unsplash
+        </a>
+      </p>
     </div>
   );
 }

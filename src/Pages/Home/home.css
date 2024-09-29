@@ -1,7 +1,7 @@
 .homepageBody {
   margin: 0;
   padding: 0;
-  background-image: url("../../Images/black-background-abstract.jpg");
+  background-image: url("../../Images/training.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -16,9 +16,10 @@
   margin: auto;
   z-index: 2;
   transform: skew(-20deg);
-  max-width: 890px;
+  max-width: 700px;
   height: 100%;
   position: relative;
+  padding-left: 105px;
 }
 
 .homepageHero::before {
@@ -76,7 +77,7 @@
 }
 
 .contact {
-  background-color: #ede6e6f5;
+  background-color: var(--grey-pink);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -92,4 +93,42 @@
   padding: 15px;
   font-size: 26px;
   margin-left: 40px;
+}
+
+.homepageHero h1 {
+  font-size: 91px;
+  font-weight: 400;
+  color: gray;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.homepageHero button {
+  margin-right: 50px;
+  padding: 15px 40px 15px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--turquoise);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 200;
+  transform: skew(0deg);
+  width: 184px;
+  height: 50px;
+  text-align: center;
+}
+
+.ticks {
+  padding-top: 150px;
+}
+
+.ticks * {
+  padding-left: 22px;
+  color: gray;
+  font-size: 23px;
 }
