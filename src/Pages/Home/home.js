@@ -35,17 +35,18 @@ export default function Home() {
         <a href="">
           <FontAwesomeIcon icon={faTwitter} id="icon" />
         </a>
+
+        <p>
+          Foto von{" "}
+          <a href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Scott Webb
+          </a>{" "}
+          auf{" "}
+          <a href="https://unsplash.com/de/fotos/frau-tragt-schwarzes-oberteil-und-halt-schwarze-hanteln-die-vor-dem-spiegel-stehen-Vn39uEkX00s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            Unsplash
+          </a>
+        </p>
       </footer>
-      <p>
-        Foto von{" "}
-        <a href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-          Scott Webb
-        </a>{" "}
-        auf{" "}
-        <a href="https://unsplash.com/de/fotos/frau-tragt-schwarzes-oberteil-und-halt-schwarze-hanteln-die-vor-dem-spiegel-stehen-Vn39uEkX00s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-          Unsplash
-        </a>
-      </p>
     </div>
   );
 }

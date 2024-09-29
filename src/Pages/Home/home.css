@@ -3,7 +3,7 @@
   padding: 0;
   background-image: url("../../Images/training.jpg");
   background-size: cover;
-  height: 100%;
+  height: calc(100vh - 180px);
   width: 100%;
 
   z-index: 1;
@@ -131,4 +131,8 @@
   padding-left: 22px;
   color: gray;
   font-size: 23px;
+}
+
+footer {
+  height: 50px;
 }
