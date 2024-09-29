@@ -30,13 +30,13 @@ export default function Home() {
       </div>{" "}
       <footer className="contact">
         <a href="">
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <FontAwesomeIcon icon={faLinkedinIn} id="icon" />
         </a>
         <a href="#" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebookF} />
+          <FontAwesomeIcon icon={faFacebookF} id="icon" />
         </a>
         <a href="">
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faTwitter} id="icon" />
         </a>
       </footer>
     </div>
