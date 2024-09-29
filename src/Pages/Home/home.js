@@ -12,7 +12,7 @@ export default function Home() {
       <div className="overlay">
         <div className="stripe"></div>
         <div className="homepageHero">
-          <h1>Become Fitter, Stronger & more confident!</h1>
+          <h1>Become Fitter, Stronger & more Confident!</h1>
           <div className="button-container">
             <button>Pricing</button>
             <button>Learn More</button>
@@ -26,6 +26,10 @@ export default function Home() {
         <div className="stripeTwo"></div>{" "}
       </div>{" "}
       <footer className="contact">
+        <form>
+          <input type="email" name="email" placeholder="Email" />
+          <button style={{ backgroundColor: "var(--red)" }}>Sign up</button>
+        </form>
         <a href="">
           <FontAwesomeIcon icon={faLinkedinIn} id="icon" />
         </a>
