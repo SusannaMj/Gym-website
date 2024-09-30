@@ -161,3 +161,8 @@ footer {
   position: relative;
   left: -152px;
 }
+
+button:active {
+  transition: all 2ms ease-in-out;
+  transform: scale(0.94);
+}
