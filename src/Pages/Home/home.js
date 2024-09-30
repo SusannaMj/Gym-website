@@ -27,8 +27,13 @@ export default function Home() {
       </div>{" "}
       <footer className="contact">
         <form>
-          <input type="email" name="email" placeholder="Email" />
-          <button style={{ backgroundColor: "var(--red)" }}>Sign up</button>
+          <input type="email" className="homepageEmail" placeholder="Email" />
+          <button
+            style={{ backgroundColor: "var(--red)" }}
+            className="homepageSignUpButton"
+          >
+            Sign up
+          </button>
         </form>
         <a href="">
           <FontAwesomeIcon icon={faLinkedinIn} id="icon" />
@@ -40,7 +45,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faTwitter} id="icon" />
         </a>
 
-        <p>
+        <p className="attribution">
           Foto von{" "}
           <a href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
             Scott Webb
