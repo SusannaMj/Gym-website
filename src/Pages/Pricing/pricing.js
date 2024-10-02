@@ -23,23 +23,23 @@ export default function Pricing() {
 
   return (
     <div className="pricing-body">
-      <h1>Our pricing</h1>
-      <div className="toggle">
-        <span>
-          Monthly
-          <input
-            type="checkbox"
-            className="toggle-checkbox"
-            id="toggle-checkbox"
-            onChange={changeSubscription}
-          />
-          <label className="toggle-switch" htmlFor="toggle-checkbox">
-            {" "}
-          </label>
-          Annually
-        </span>
-      </div>
-      <div className="Wrapper">
+      <div className="pricing-wrapper">
+        <h1>Our pricing</h1>
+        <div className="toggle">
+          <span>
+            <span style={{ color: "gray", fontSize: "25px" }}>Monthly</span>
+            <input
+              type="checkbox"
+              className="toggle-checkbox"
+              id="toggle-checkbox"
+              onChange={changeSubscription}
+            />
+            <label className="toggle-switch" htmlFor="toggle-checkbox">
+              {" "}
+            </label>
+            <span style={{ color: "gray", fontSize: "25px" }}>Annually</span>
+          </span>
+        </div>
         <div className="pricing-cards">
           <div
             className={`pricing-card ${rotation ? "rotated" : ""}`}
@@ -53,7 +53,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -119,7 +119,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -185,7 +185,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -250,7 +250,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -316,7 +316,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -382,7 +382,7 @@ export default function Pricing() {
               </p>
               <p
                 style={{
-                  fontSize: "16px",
+                  fontSize: "20px",
                   color: "var(--grey)",
                   fontWeight: "500",
                 }}
@@ -435,7 +435,24 @@ export default function Pricing() {
               </ul>
             </div>
           </div>
-        </div>
+        </div>{" "}
+        <a
+          className="attribution"
+          rel="norefferrer"
+          target="_blank"
+          href="www.freepik.com"
+        >
+          {" "}
+          backgound image by{" "}
+          <a
+            href="https://www.freepik.com/author/creative-hat"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Creative_hat
+          </a>
+          www.freepik.com
+        </a>
       </div>
     </div>
   );
