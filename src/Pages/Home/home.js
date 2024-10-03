@@ -1,18 +1,10 @@
 import React from "react";
 import "./home.css";
+import Footer from "../../Footer/footer";
 import { useNavigate, useNavigation } from "react-router-dom";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   const navigate = useNavigate();
-
-  function navigateToSignUp() {
-    navigate("/signUp");
-  }
 
   function navigateToPricing() {
     navigate("/pricing");
@@ -40,44 +32,23 @@ export default function Home() {
         </div>
         <div className="stripeTwo"></div>{" "}
       </div>{" "}
-      <footer className="contact">
-        <form>
-          <input type="email" className="homepageEmail" placeholder="Email" />
-          <button
-            style={{ backgroundColor: "var(--red)" }}
-            className="homepageSignUpButton"
-            onClick={navigateToSignUp}
-          >
-            Sign up
-          </button>
-        </form>
-        <a href="">
-          <FontAwesomeIcon icon={faLinkedinIn} id="icon" />
+      <Footer />
+      <p className="attribution">
+        Foto von{" "}
+        <a
+          target="_blank"
+          href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >
+          Scott Webb
+        </a>{" "}
+        auf{" "}
+        <a
+          target="_blank"
+          href="https://unsplash.com/de/fotos/frau-tragt-schwarzes-oberteil-und-halt-schwarze-hanteln-die-vor-dem-spiegel-stehen-Vn39uEkX00s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >
+          Unsplash
         </a>
-        <a href="#" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebookF} id="icon" />
-        </a>
-        <a href="">
-          <FontAwesomeIcon icon={faTwitter} id="icon" />
-        </a>
-
-        <p className="attribution">
-          Foto von{" "}
-          <a
-            target="_blank"
-            href="https://unsplash.com/de/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >
-            Scott Webb
-          </a>{" "}
-          auf{" "}
-          <a
-            target="_blank"
-            href="https://unsplash.com/de/fotos/frau-tragt-schwarzes-oberteil-und-halt-schwarze-hanteln-die-vor-dem-spiegel-stehen-Vn39uEkX00s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >
-            Unsplash
-          </a>
-        </p>
-      </footer>
+      </p>
     </div>
   );
 }

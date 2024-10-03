@@ -1,5 +1,6 @@
 import React from "react";
 import "./courses.css";
+import Footer from "../../Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 
@@ -46,7 +47,7 @@ export default function Courses() {
             </div>
           </div>
         </div>
-        <footer>
+        <div>
           <span>
             Free SVG Background by{" "}
             <a target="_blank" href="https://bgjar.com" rel="noreferrer">
@@ -58,8 +59,9 @@ export default function Courses() {
               Gym icons created by Freepik - Flaticon
             </a>
           </span>
-        </footer>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

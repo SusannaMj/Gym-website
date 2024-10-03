@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./pricing.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../Footer/footer";
 
 export default function Pricing() {
   const navigate = useNavigate();
@@ -454,6 +455,7 @@ export default function Pricing() {
           www.freepik.com
         </a>
       </div>
+      <Footer />
     </div>
   );
 }
