@@ -17,4 +17,8 @@
 
 body {
   background-color: var(--grey-pink);
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
 }
