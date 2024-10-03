@@ -113,7 +113,7 @@
 }
 
 .ticks {
-  padding-top: 150px;
+  padding-top: 120px;
 }
 
 .ticks * {
@@ -135,13 +135,14 @@
   text-transform: uppercase;
 }
 
-.attribution {
-  position: fixed;
-  right: 10px;
-  bottom: 0px;
-}
-
 button:active {
   transition: all 2ms ease-in-out;
   transform: scale(0.94);
+}
+
+.attribution {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: var(--turquoise);
 }
