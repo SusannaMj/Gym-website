@@ -10,8 +10,8 @@
 .toggle {
   display: block;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .toggle-checkbox {
@@ -52,7 +52,7 @@
 .pricing-wrapper {
   background-image: url("../../Images/background-abstract-black.jpg");
   background-size: cover;
-  padding: 50px;
+  padding: 30px 50px 30px 50px;
 }
 
 .pricing-cards {
@@ -80,8 +80,7 @@
   border-radius: 50px;
 }
 .pricing-card:hover {
-  transform: scale(1.15);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @keyframes spin {
@@ -98,7 +97,7 @@
 }
 
 .pricing-card.rotated:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .subscription-name {
