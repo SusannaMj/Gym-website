@@ -1,20 +1,19 @@
 import React from "react";
 import "./courses.css";
 import Footer from "../../Footer/footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import classImage from "../../Images/gym-class (2).jpg";
 
 export default function Courses() {
   return (
     <div className="courseBody">
       <div className="courses">
         {" "}
-        <div className="wrapper">
+        <div className="courses-wrapper">
           <h2>Training that suits everyone</h2>
           <h1>From open gym to personal training</h1>
 
           <div className="boxes">
-            <div className="boxOne">
+            <div className="box boxOne">
               <h3>Classes</h3>
               <p>
                 We offer classes to suit everyones schedule and favorites - from
@@ -22,15 +21,15 @@ export default function Courses() {
               </p>
             </div>
 
-            <div className="boxTwo">
+            <div className="box boxTwo">
               <h3>Gym</h3>
               <p>Our gym is open 24/7 and offers the latest equipment</p>
               <div className="icon">
-                <FontAwesomeIcon icon={faDumbbell} />
+                <img src={classImage} alt="gymClass" />
               </div>
             </div>
 
-            <div className="boxThree">
+            <div className="box boxThree">
               <h3>Personal Training</h3>
               <p>
                 Our personal trainers will get you to reach your goals while
@@ -38,7 +37,7 @@ export default function Courses() {
               </p>
             </div>
 
-            <div className="boxFour">
+            <div className="box boxFour">
               <h3>Entertainment</h3>
               <p>
                 We have an onsite juicebar, as well as free childcare, so you
@@ -47,20 +46,15 @@ export default function Courses() {
             </div>
           </div>
         </div>
-        <div>
-          <span>
-            Free SVG Background by{" "}
-            <a target="_blank" href="https://bgjar.com" rel="noreferrer">
-              BGJar
-            </a>
-          </span>
-          <span>
-            <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">
-              Gym icons created by Freepik - Flaticon
-            </a>
-          </span>
-        </div>
       </div>
+      Foto von{" "}
+      <a href="https://unsplash.com/de/@brucemars?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        bruce mars
+      </a>{" "}
+      auf{" "}
+      <a href="https://unsplash.com/de/fotos/frau-tragt-sport-bh-und-steht-auf-dem-boden-der-turnhalle-pFyKRmDiWEA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Unsplash
+      </a>
       <Footer />
     </div>
   );
