@@ -24,9 +24,6 @@ export default function Courses() {
             <div className="box boxTwo">
               <h3>Gym</h3>
               <p>Our gym is open 24/7 and offers the latest equipment</p>
-              <div className="icon">
-                <img src={classImage} alt="gymClass" />
-              </div>
             </div>
 
             <div className="box boxThree">

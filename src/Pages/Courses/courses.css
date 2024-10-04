@@ -1,6 +1,21 @@
 .courses h1,
 h2 {
-  text-align: center;
+  text-align: left;
+}
+
+.courses h1 {
+  font-size: 53px;
+  padding-bottom: 40px;
+  padding-top: 0;
+  font-weight: 400;
+  color: var(--white);
+  transform: translate(70px);
+  margin: 0;
+}
+.courses h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--white);
 }
 
 .courses h3 {
@@ -9,18 +24,21 @@ h2 {
 }
 
 .courses-wrapper {
-  background-image: url("../../Images/gym-class\ \(2\).jpg");
+  background-image: linear-gradient(
+      353deg,
+      rgb(254, 251, 252, 0) 40%,
+      rgba(45, 45, 45, 0.6) 75%,
+      rgba(17, 17, 17, 0.8) 85%
+    ),
+    url("../../Images/gym-class\ \(2\).jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -70px;
-  filter: brightness(90%);
 
-  padding: 30px 70px 109px 70px;
+  padding: 30px 70px 100px 70px;
 
   margin-inline: 100px;
-  margin-top: 35px;
-
-  box-shadow: rgba(166, 166, 166, 0.567) 0px 4px 41px;
+  margin-top: 15px;
 }
 
 .boxes {
@@ -42,21 +60,25 @@ h2 {
   position: relative;
   bottom: -62%;
 
-  border-top: 5px solid var(--turquoise);
+  border-top: 15px solid var(--turquoise);
+  border-bottom: 15px solid var(--turquoise);
 }
 
 .boxTwo {
-  border-top: 5px solid var(--red);
+  border-top: 15px solid var(--red);
+  border-bottom: 15px solid var(--red);
 }
 
 .boxThree {
   position: relative;
   bottom: -62%;
-  border-top: 5px solid var(--opaque);
+  border-top: 15px solid var(--opaque);
+  border-bottom: 15px solid var(--opaque);
 }
 .boxFour {
   grid-column: 2;
-  border-top: 5px solid var(--yellow);
+  border-top: 15px solid var(--yellow);
+  border-bottom: 15px solid var(--yellow);
 }
 .boxes > div {
   padding: 10px 30px 10px 24px;
