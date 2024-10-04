@@ -3,10 +3,20 @@ h2 {
   text-align: center;
 }
 
-.wrapper {
-  background-color: var(--dark-white);
-  padding: 30px 90px 109px 90px;
-  display: block;
+.courses h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.courses-wrapper {
+  background-image: url("../../Images/gym-class\ \(2\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  filter: brightness(90%);
+
+  padding: 30px 70px 109px 70px;
+
   margin-inline: 100px;
   margin-top: 35px;
 
@@ -21,12 +31,11 @@ h2 {
   column-gap: 5%;
 }
 
-.boxOne,
-.boxTwo,
-.boxThree,
-.boxFour {
+.box {
   box-shadow: rgba(106, 140, 157, 0.24) 2px 8px 13px;
   border-radius: 5px;
+  background-color: var(--white);
+  opacity: 0.87;
 }
 
 .boxOne {
@@ -50,12 +59,19 @@ h2 {
   border-top: 5px solid var(--yellow);
 }
 .boxes > div {
-  padding: 10px 30px 100px 24px;
+  padding: 10px 30px 10px 24px;
   width: auto;
 }
 
 .courses p {
-  color: rgb(194, 193, 193);
+  color: grey;
+  font-size: 21px;
+}
+
+.icon > img {
+  max-width: 150px;
+
+  border-radius: 30%;
 }
 
 @media (max-width: 1300px) {
