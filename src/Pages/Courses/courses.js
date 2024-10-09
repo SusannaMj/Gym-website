@@ -1,7 +1,7 @@
 import React from "react";
 import "./courses.css";
 import Footer from "../../Footer/footer";
-import classImage from "../../Images/gym-class (2).jpg";
+import starIcon from "../../Images/star-icon.svg.png";
 
 export default function Courses() {
   return (
@@ -19,6 +19,7 @@ export default function Courses() {
                 We offer classes to suit everyones schedule and favorites - from
                 Zumba, to Karate, join and have fun
               </p>
+              <img src={starIcon} className="star-icon" />
             </div>
 
             <div className="box boxTwo">
@@ -32,13 +33,14 @@ export default function Courses() {
                 Our personal trainers will get you to reach your goals while
                 bulding confidence and health
               </p>
+              <img src={starIcon} className="star-icon" />
             </div>
 
             <div className="box boxFour">
               <h3>Entertainment</h3>
               <p>
                 We have an onsite juicebar, as well as free childcare, so you
-                donät have to worry about anything despite your workout
+                don't have to worry about anything despite your workout
               </p>
             </div>
           </div>
