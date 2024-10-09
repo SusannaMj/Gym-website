@@ -97,7 +97,7 @@
 }
 
 .pricing-card.rotated:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
 
 .subscription-name {
